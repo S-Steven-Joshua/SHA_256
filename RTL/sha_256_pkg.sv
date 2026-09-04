@@ -11,7 +11,7 @@ package sha_256_pkg;
     localparam logic [31:0] H7_INIT = 32'h5be0cd19;
 
     // Array of 64 Round Constants (First 32 bits of the fractional parts of the cube roots of the first 64 primes)
-    localparam logic [31:0] K [64] = '{
+    localparam logic [31:0] K [64] = {
         32'h428a2f98, 32'h71374491, 32'hb5c0fbcf, 32'he9b5dba5,
         32'h3956c25b, 32'h59f111f1, 32'h923f82a4, 32'hab1c5ed5,
         32'hd807aa98, 32'h12835b01, 32'h243185be, 32'h550c7dc3,
